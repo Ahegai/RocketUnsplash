@@ -5,7 +5,12 @@
       @finishLoading="finish"
     />
     <loader v-if="loading" />
-    <v-card style="height: 10px" flat v-if="next" v-intersect.quiet="scroll"></v-card>
+    <v-card
+      v-if="next"
+      v-intersect.quiet="scroll"
+      style="height: 10px"
+      flat
+    />
   </div>
 </template>
 <script>

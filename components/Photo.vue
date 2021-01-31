@@ -27,7 +27,9 @@
             style="border-radius: 8px"
             @click="likeOrDislike({status: image.liked_by_user, id: image.id})"
           >
-            <v-icon :color="image.liked_by_user ? 'red' : '#ADA6A4'">mdi-heart</v-icon>
+            <v-icon :color="image.liked_by_user ? 'red' : '#ADA6A4'">
+              mdi-heart
+            </v-icon>
           </v-btn>
           <v-btn
             color="success"
@@ -52,7 +54,10 @@
             </v-icon>
           </v-btn>
         </div>
-        <img :src="image.urls.full" class="mt-6 mt-md-0 mb-6 mt-md-0">
+        <img
+          :src="image.urls.full"
+          class="mt-6 mt-md-0 mb-6 mt-md-0"
+        >
         <div class="text-center mb-4 photo_tags">
           <p>
             Похожие теги

@@ -37,7 +37,10 @@
             Поиск
           </span>
         </div>
-        <div class="ml-5 mr-2" @click="redirect('/favourites')">
+        <div
+          class="ml-5 mr-2"
+          @click="redirect('/favourites')"
+        >
           <v-icon color="white">
             mdi-cards-heart
           </v-icon>
@@ -45,7 +48,11 @@
             Избранное            
           </span>
         </div>
-        <div class="ml-5 mr-2" :class="{active_icon: historyStatus}" @click="historyStatus = !historyStatus; search = false">
+        <div
+          class="ml-5 mr-2"
+          :class="{active_icon: historyStatus}"
+          @click="historyStatus = !historyStatus; search = false"
+        >
           <v-icon color="white">
             mdi-history
           </v-icon>
@@ -61,8 +68,13 @@
     >
       <h1>Ваши запросы</h1>
       <div class="big_header-history">
-        <span @click="redirect('/search/' + tag)" class="ml-2" v-for="tag in history" :key="'hist_' + tag">
-          {{tag}}
+        <span
+          v-for="tag in history"
+          :key="'hist_' + tag"
+          class="ml-2"
+          @click="redirect('/search/' + tag)"
+        >
+          {{ tag }}
         </span>
       </div>
     </div>

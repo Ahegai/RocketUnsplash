@@ -1,6 +1,6 @@
 <template>
   <div>
-    <mansory :photos="UNSPLASH.likeList"></mansory>
+    <mansory :photos="UNSPLASH.likeList" />
   </div>
 </template>
 <script>

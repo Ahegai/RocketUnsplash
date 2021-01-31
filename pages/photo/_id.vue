@@ -8,7 +8,12 @@
         </h1>
         <mansory :photos="UNSPLASH.photosArray" />
         <loader v-if="other" />
-        <v-card style="height: 10px" flat v-if="next" v-intersect.quiet="scroll"></v-card>
+        <v-card
+          v-if="next"
+          v-intersect.quiet="scroll"
+          style="height: 10px"
+          flat
+        />
       </div>
     </div>
     <loader v-else />

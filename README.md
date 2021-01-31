@@ -17,4 +17,6 @@ $ npm run start
 $ npm run generate
 ```
 
+50 запросов в час из за ограничения Unsplash Demo
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

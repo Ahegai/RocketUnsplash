@@ -1,6 +1,9 @@
 <template>
   <div style="width: 100%">
-    <masonry :cols="{default: 3, 700: 1}" :gutter="16">
+    <masonry
+      :cols="{default: 3, 700: 1}"
+      :gutter="16"
+    >
       <div
         v-for="photo in photos"
         :key="photo.id"
@@ -21,7 +24,10 @@
                 icon
                 @click="likeOrDislike({status: photo.liked_by_user, id: photo.id})"
               >
-                <v-icon :size="hover ? '36' : '26'" :color="photo.liked_by_user ? 'red' : hover ? 'white' : '#ADA6A4' ">
+                <v-icon
+                  :size="hover ? '36' : '26'"
+                  :color="photo.liked_by_user ? 'red' : hover ? 'white' : '#ADA6A4' "
+                >
                   mdi-heart
                 </v-icon>
               </v-btn>
